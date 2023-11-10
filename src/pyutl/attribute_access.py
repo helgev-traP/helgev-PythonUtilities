@@ -1,8 +1,8 @@
 """get/set inner attribute recursively"""
+
 import re
 
 
-# path無しはgetのみ
 def getattr_h(instance, attribute_path: str):
     """wrap getattr"""
     # trail empty path
@@ -50,7 +50,7 @@ def setattr_h(instance, attribute_path: str, value):
 
 
 if __name__ == "__main__":
-
+    '''必要なければ消す'''
     class obj:
         class iobj:
             def __init__(self):
